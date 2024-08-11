@@ -35,7 +35,7 @@ The data was then split into training and testing sets. The first two years of d
 ## Model Structure
 The Prophet model was configured with specific settings to best capture the underlying patterns in the weekly sales data. The model was initialized with yearly_seasonality enabled and the seasonality_mode set to 'multiplicative'.
 
-Several configurations and additional features of the Prophet model were tested during the analysis. However, this particular configuration proved to be the most effective in capturing the sales patterns. Using the multiplicative seasonality_mode as opposed to additive seemed to make little difference, which is surprising given that sales data often exhibits a multiplicative pattern, where seasonal effects and trends scale with the overall level of sales. The inclusion of yearly_seasonality was however crucial, significantly improving model performance. This improvement does make sense though given that Walmart's sales are likely to be influenced by strong annual patterns, such as holiday shopping seasons and other recurring events that have a substantial impact on consumer behavior year after year.
+Several configurations and additional features of the Prophet model were tested during the analysis. However, this particular configuration proved to be the most effective in capturing the sales patterns. Using the multiplicative seasonality_mode as opposed to additive seemed to make little difference, which is surprising given that sales data often exhibits a multiplicative pattern, where seasonal effects and trends scale with the overall level of sales. However, the inclusion of yearly_seasonality was crucial as it significantly improved the model's performance. This improvement does make sense though given that Walmart's sales are likely to be influenced by strong annual patterns, such as holiday shopping seasons and other recurring events that have a substantial impact on consumer behavior year after year.
 
 ```python
 # Initialize the Prophet model
@@ -54,8 +54,8 @@ In the graph below, the model's forecast is compared to the actual sales values.
 As shown in the chart, the model's predictions closely align with the actual sales data. Almost all of the red points fall within the confidence interval bands, suggesting that the model has effectively captured the underlying patterns and trends in the sales data. This strong performance is further supported by the low RMSE, MAE, and MAPE values:
 
 ```python
-Mean Absolute Error: 45127.23
 RMSE: 64428.33
+Mean Absolute Error: 45127.23
 Mape: 4.56
 ```
 
