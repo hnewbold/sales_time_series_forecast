@@ -21,7 +21,7 @@ This project utilizes Facebook's Prophet package, a robust time series forecasti
 ### Project Description
 The analysis began with basic data cleaning, which included checking for duplicates and ensuring that the weekly sales values were complete and continuous. The store with the most central sales tendencies was identified and selected for this analysis.
 
-Once the data was cleaned and preprocessed, the Prophet model was tuned and trained, testing various hyperparameters. In the end, the model performed exceptionally well, achieving a validated Root Mean Squared Error (RMSE) of $64,000 and a Mean Absolute Percentage Error (MAPE) of 4.5%. 
+Once the data was cleaned and preprocessed, the Prophet model was tuned and trained, testing various hyperparameters. In the end, the model performed exceptionally well, achieving a Root Mean Squared Error (RMSE) of $64,000 and a Mean Absolute Percentage Error (MAPE) of 4.5% in the validation dataset.
 
 ## Dataset
 The dataset was filtered to focus on a single Walmart store by selecting the one whose mean weekly sales were closest to the overall mean of weekly sales across all stores. This approach was used in this first iteration of the model to test it on the store that exhibited the most typical sales behavior. The decision not to use every store was made to avoid potential noise in the model caused by differences in store sizes and locations. In the future, a more nuanced approach would be needed to forecast sales across the entire population of stores.
