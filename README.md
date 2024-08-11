@@ -28,6 +28,8 @@ The dataset was filtered to focus on a single Walmart store by selecting the sto
 
 The resulting dataset spans three years of weekly sales data, from February 5, 2010, to October 26, 2012. This period captures various seasonal trends, sales patterns, and potential anomalies, providing a robust foundation for time series analysis.
 
+<img src="Weekly Sales store 22.png" alt="ANN" width="600" height="300">
+
 The data was then split into training and testing sets. The first two years of data were used to train the Prophet model, offering ample historical information to inform the model. The final 43 weeks of data were reserved as the test set, enabling an evaluation of the model's predictive accuracy and its effectiveness in forecasting future sales trends.
 
 ## Model Structure
@@ -48,6 +50,8 @@ model = Prophet(
 ## Results
 
 The results of the forecast are visually represented in the chart below. The blue line represents the model's predicted sales, while the red dots indicate the actual sales from the test data. The shaded blue area around the forecast line represents the confidence interval, providing an estimate of the range within which the true values are expected to fall.
+
+<img src="2012 forecast vs actuals .png" alt="ANN" width="600" height="300">
 
 As shown in the chart, the model closely mimics the actual sales data, with almost all of the red points falling within the confidence interval bands. This suggests that the model has effectively captured the underlying patterns and trends in the sales data. The close alignment between the predicted and actual values, with the exception of one outlier, demonstrates the model's accuracy and reliability in forecasting weekly sales. This strong performance is further supported by the low RMSE,MAE & MAPE values, indicating that the model can be confidently used for future sales predictions.
 
