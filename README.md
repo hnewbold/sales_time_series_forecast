@@ -16,7 +16,7 @@
 ## Introduction & Project Description
 
 ### Introduction
-This project utilizes Facebook's Prophet package, a robust time series forecasting tool, to predict weekly sales data for a Walmart store. By leveraging historical sales data and a few key independent variables, the model is able to provide highly accurate forecasts of future sales trends which can aid in better decision-making for strategic planning.
+This project utilizes Facebook's Prophet package, a robust time series forecasting tool, to predict weekly sales data. By leveraging historical sales data and a few key independent variables, the model is able to provide highly accurate forecasts of future sales trends which can aid in better decision-making for strategic planning.
 
 ### Project Description
 The analysis began with basic data cleaning, which included checking for duplicates and ensuring that the weekly sales values were complete and continuous. The store with the most central sales tendencies was identified and selected for this analysis.
